@@ -1,10 +1,9 @@
 body{
     background-color: black
-
 }
 
 .logo{
-    height: 200px;
+    height: 150px;
     text-align: bottom;
 }
 
@@ -17,9 +16,9 @@ header {
 
 .activo{
     color: #3c8b17;
+    border-bottom: 1px solid #3c8b17;
 }
 nav ul{
-    
     display: flex;
     list-style: none;
     gap: 120px;
@@ -41,11 +40,13 @@ nav ul li a:hover {
     color: white;
     text-align: left;
     margin-top: 50px;
-    border-top: 1px solid #bff9a4;
-    border-bottom: 1px solid #bff9a4;
 }
 
 .Encabezado li a{
     color: white;
     text-decoration: none;
+}
+
+.Encabezado li a:hover{
+    color: #bff9a4;
 }
