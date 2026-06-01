@@ -3,7 +3,7 @@ body{
 }
 
 .logo{
-    height: 150px;
+    height: 100px;
     text-align: bottom;
 }
 
@@ -18,12 +18,11 @@ header {
     color: #3c8b17;
     border-bottom: 1px solid #3c8b17;
 }
-nav ul{
-    
+nav ul{ 
     display: flex;
     list-style: none;
     gap: 120px;
-    font-size: 32px;
+    font-size: 20px;
 }
 
 nav ul li a{
