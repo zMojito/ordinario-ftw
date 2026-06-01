@@ -1,0 +1,51 @@
+body{
+    background-color: black
+
+}
+
+.logo{
+    height: 200px;
+    text-align: bottom;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.activo{
+    color: #3c8b17;
+}
+nav ul{
+    
+    display: flex;
+    list-style: none;
+    gap: 120px;
+    font-size: 32px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #bff9a4;
+}
+
+.Encabezado{
+    padding: 10% 15%;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    margin-top: 50px;
+    border-top: 1px solid #bff9a4;
+    border-bottom: 1px solid #bff9a4;
+}
+
+.Encabezado li a{
+    color: white;
+    text-decoration: none;
+}
