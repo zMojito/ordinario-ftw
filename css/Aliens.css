@@ -52,6 +52,20 @@ article{
     color: white;
     padding: 10px;
     padding-left: 80px;
+    padding-right: 80px;
     padding-top: 250px;
     text-align: left;
+    font-size: 20px;
+}
+
+#lista-aliens img {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #3c8b17;
+}
+
+.titulo {
+    color: white;
+    text-align: center;
+    font-size: 50px;
 }

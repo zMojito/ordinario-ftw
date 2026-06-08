@@ -26,7 +26,7 @@ function mifuncion(aliens) {
         const imgPath = imgNode ? imgNode.textContent : "";
 
         table += "<tr>" +
-            "<td><img src='../" + imgPath + "' alt='" + titulo + "' style='max-width: 100px; display: block; margin: 0 auto;'></td>" +
+            "<td><img src='../" + imgPath + "' alt='" + titulo + "' style='max-width: 300px; display: block; margin: 0 auto;'></td>" +
             "<td><strong>" + titulo + "</strong></td>" +
             "<td>" + desc + "</td>" +
             "</tr>";
