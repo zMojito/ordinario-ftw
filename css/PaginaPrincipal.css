@@ -84,6 +84,12 @@ article {
     border-radius: 8px;
 }
 
+main{
+    background-color: rgb(44, 44, 44);
+    border-radius: 8px;
+    margin: 20px;
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
