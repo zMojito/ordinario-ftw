@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aliens>
+    <alien id="1">
+        <titulo>Marcianito Cumbiero</titulo>
+        <descripcion>Un ser de color verde, ojos grandes y oscuros, conocido por sus grandes pasos de baile de otro mundo.</descripcion>
+        <imagen>imagenes/marciano.jpg</imagen>
+    </alien>
+    <alien id="2">
+        <titulo>Listillo</titulo>
+        <descripcion>Una creatura de aspecto deforme, perteneciente a una carrera de informatica, se dice que la curvatura de su espalda tiene una circunferencia perfecta.</descripcion>
+        <imagen>imagenes/listillo.jpg</imagen>
+    </alien>
+    <alien id="3">
+        <titulo>Maussiano</titulo>
+        <descripcion>Seres ancestrales que fueron hallados por el reconocido investigador Jaime Maussan, se dice que saben a chocolate.</descripcion>
+        <imagen>imagenes/Maussiano.jpg</imagen>
+    </alien>
+    <alien id="4">
+        <titulo>Walter Mercado</titulo>
+        <descripcion>Su apariencia extravagante, sus capas de materiales desconocidos en la Tierra y su capacidad para leer el destino de la humanidad a través de las estrellas sugieren que era un embajador de una civilización sumamente avanzada.</descripcion>
+        <imagen>imagenes/walter_mercado.jpg</imagen>
+    </alien>
+    <alien id="5">
+        <titulo>Dr Simi</titulo>
+        <descripcion>Escrituras antiguas sugieren que existe una gran conspiracion detras de estas farmacias y que buscan lograr dominar el planeta con la expansion de la cadena.</descripcion>
+        <imagen>imagenes/dr_simi.jpg</imagen>
+    </alien>
+    <alien id="6">
+        <titulo>Pedrito Sola</titulo>
+        <descripcion>Un ser que se ha apoderado de los medios de comunicación para lavarle el cerebro a la población, su dieta principal consiste en moscas y mayonesa McCormick.</descripcion>
+        <imagen>imagenes/pedrito_sola.jpg</imagen>
+    </alien>
+</aliens>
