@@ -145,6 +145,13 @@ dialog::backdrop {
     margin: 0;
 }
 
+blockquote{
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    font-style: italic;
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
