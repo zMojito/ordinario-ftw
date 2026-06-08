@@ -25,12 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         console.error('Error parsing XML:', e);
                     }
                 }
-
-                if (!xmlDoc) {
-                    alert('No se pudo leer la lista de usuarios.');
-                    return;
-                }
-
                 const usuarios = xmlDoc.getElementsByTagName('usuario');
                 let encontrado = false;
 
@@ -51,10 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else {
                     alert('Usuario o contraseña incorrectos.');
                 }
-            };
-
-            xhttp.onerror = function () {
-                alert('Error cargando los datos de usuarios.');
             };
 
             xhttp.open('GET', 'xml/usuarios.xml', true);

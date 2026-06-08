@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <usuarios>
     <usuario>
-        <nombre>juan</nombre>
+        <nombre>Emilio</nombre>
         <password>1234</password>
     </usuario>
     <usuario>
-        <nombre>maria</nombre>
-        <password>abcd</password>
+        <nombre>Profe</nombre>
+        <password>4567</password>
     </usuario>
 </usuarios>
