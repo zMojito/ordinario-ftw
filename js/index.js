@@ -1,9 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const dialog = document.getElementById('articulo');
-    const openBtn = document.getElementById('boton');
+    const form = document.querySelector('form');
+    const nombre = document.getElementById('nombre');
+    const password = document.getElementById('password');
 
+    if (form) {
+        form.addEventListener('submit', (event) => {
+            if (!nombre.value.trim() || !password.value.trim()) {
+                event.preventDefault();
+                alert('Por favor completa ambos campos antes de continuar.');
+                return;
+            }
 
-    openBtn.addEventListener('click', () => {
-        dialog.showModal();
-    });
+            event.preventDefault();
+            window.location.href = 'html/PaginaPrincipal.html';
+        });
+    }
 });
