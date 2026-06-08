@@ -1,0 +1,21 @@
+#global-footer {
+    background: rgba(0, 0, 0, 0.82);
+    color: #f1f1f1;
+    padding: 14px 24px;
+    text-align: center;
+    font-size: 0.95rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    margin-top: 32px;
+}
+
+#global-footer a {
+    color: #9ce775;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 14px;
+}
+
+#global-footer a:hover {
+    text-decoration: underline;
+}
