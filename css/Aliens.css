@@ -1,5 +1,5 @@
 body{
-    background-color: black
+    background-color: black;
 }
 
 .logo{
@@ -32,4 +32,26 @@ nav ul li a{
 
 nav ul li a:hover {
     color: #bff9a4;
+}
+
+article{
+    color: white;
+    padding: 20px;
+}
+
+#lista-aliens {
+    color: white;
+}
+
+#lista-aliens table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#lista-aliens td {
+    color: white;
+    padding: 10px;
+    padding-left: 80px;
+    padding-top: 250px;
+    text-align: left;
 }
