@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cryptidos>
+    <cryptido id="1">
+        <titulo>Nahual</titulo>
+        <descripcion>Cuentan las lenguas que es un ser maligno que toma la apariencia de distintos animales, se dice recorre la FEI a veces como estudiante de Ciberseguridad, a veces como gato.</descripcion>
+        <imagen>../recursos/nahual.jpeg</imagen>
+    </cryptido>
+    <cryptido id="2">
+        <titulo>El perro que come cereal con cuchara</titulo>
+        <descripcion>A direrencia de los nahuales, este ser unicamente es un perro pero con modales, sabe usar utensilios aunque lo oculta de su familia</descripcion>
+        <imagen>../recursos/cereal.jpg</imagen>
+    </cryptido>
+    <cryptido id="3">
+        <titulo>La cabra del columpio</titulo>
+        <descripcion>Una cabra salida del mismisimo averno, en las noches se divierte balanceandose en un columpio, camina en 2 patas y tiene una mirada capaz de ver tu alma</descripcion>
+        <imagen>../recursos/cabra.jpg</imagen>
+    </cryptido>
+    <cryptido id="4">
+        <titulo>Meowl</titulo>
+        <descripcion>Se dice que es el alma de un estudiante de Listi despues de reprobar networking, al ser mordido por un gato y un buho a la vez y haber sufrido un gran estres por su reprobacion se convirtio en este ser, ahora vaga libremente por el bosque.</descripcion>
+        <imagen>../recursos/meowl.jpg</imagen>
+    </cryptido>
+    <cryptido id="5">
+        <titulo>Señora de los tacos de canasta</titulo>
+        <descripcion>Una gran hechizera capaz de alterar la realidad y con el poder de la omnisciencia, pues sin abrir el taco es capaz de ver el futuro y escoger si es de papa o de chicharron</descripcion>
+        <imagen>../recursos/tacos.webp</imagen>
+    </cryptido>
+    <cryptido id="6">
+        <titulo>Luzio</titulo>
+        <descripcion>Un ave anthropomorfica que controla la UV detras de las sombras, es benerado por algunos y temido por muchos.</descripcion>
+        <imagen>../recursos/luzio.png</imagen>
+    </cryptido>
+</cryptidos>

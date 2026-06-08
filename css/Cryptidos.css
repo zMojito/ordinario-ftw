@@ -41,6 +41,43 @@ nav ul li a:hover {
     color: #bff9a4;
 }
 
+#lista-cryptidos {
+    padding: 0 20px 40px;
+}
+
+#lista-cryptidos table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#lista-cryptidos tr {
+    border-bottom: 1px solid #333;
+}
+
+#lista-cryptidos td {
+    padding: 20px;
+    vertical-align: top;
+}
+
+#lista-cryptidos td:first-child {
+    width: 320px;
+}
+
+#lista-cryptidos img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 2px solid #3c8b17;
+    display: block;
+    margin: 0 auto;
+}
+
+#lista-cryptidos strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -55,5 +92,22 @@ nav ul li a:hover {
 
     nav ul li a {
         font-size: 18px;
+    }
+
+    #lista-cryptidos td {
+        display: block;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    #lista-cryptidos td:first-child {
+        width: 100%;
+    }
+
+    #lista-cryptidos img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        aspect-ratio: 1 / 1;
     }
 }
