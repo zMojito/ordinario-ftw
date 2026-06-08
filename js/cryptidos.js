@@ -15,7 +15,7 @@ function cargar() {
 }
 
 function mifuncion(cryptidos) {
-    let table = "<table>";
+    let grid = "<div class='grid-container'>";
     
     for (let i = 0; i < cryptidos.length; i++) {
         const tituloNode = cryptidos[i].getElementsByTagName("titulo")[0];
@@ -25,14 +25,25 @@ function mifuncion(cryptidos) {
         const desc = descNode ? descNode.textContent : "";
         const imgPath = imgNode ? imgNode.textContent : "";
 
-        table += "<tr>" +
-        "<td><img src='" + imgPath + "' alt='" + titulo + "'></td>" +
-        "<td><strong>" + titulo + "</strong></td>" +
-        "<td>" + desc + "</td>" +
-        "</tr>";
+        grid += "<div class='grid-item'>" +
+        "<img src='" + imgPath + "' alt='" + titulo + "' onclick='openModalCryptido(\"" + titulo + "\", \"" + desc + "\", \"" + imgPath + "\")'>" +
+        "<p class='grid-title'>" + titulo + "</p>" +
+        "</div>";
     }
-    table += "</table>";
-    document.getElementById("lista-cryptidos").innerHTML = table;
+    grid += "</div>";
+    document.getElementById("lista-cryptidos").innerHTML = grid;
+}
+
+function openModalCryptido(titulo, desc, img) {
+    const modal = document.getElementById("modal-cryptido");
+    document.getElementById("modal-cryptido-titulo").textContent = titulo;
+    document.getElementById("modal-cryptido-desc").textContent = desc;
+    document.getElementById("modal-cryptido-img").src = img;
+    modal.showModal();
+}
+
+function closeModalCryptido() {
+    document.getElementById("modal-cryptido").close();
 }
 
 cargar();

@@ -41,6 +41,140 @@ nav ul li a:hover {
     color: #bff9a4;
 }
 
+.filtros-container {
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.search-box {
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px 15px;
+    font-size: 16px;
+    background-color: #1a1a1a;
+    border: 2px solid #3c8b17;
+    color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.search-box input::placeholder {
+    color: #888;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: #bff9a4;
+    background-color: #252525;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #1a1a1a;
+    color: #bff9a4;
+    border: 2px solid #3c8b17;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #3c8b17;
+    color: white;
+}
+
+.filter-btn.active {
+    background-color: #3c8b17;
+    color: white;
+    border-color: #bff9a4;
+}
+
+#lista-casos {
+    padding: 0 20px 40px;
+}
+
+.casos-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.caso-card {
+    background-color: #1a1a1a;
+    border: 2px solid #3c8b17;
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.caso-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(60, 139, 23, 0.5);
+}
+
+.tipo-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+.tipo-aliens {
+    background-color: #2a5f1f;
+}
+
+.tipo-cryptidos {
+    background-color: #3d5c3d;
+}
+
+.tipo-fantasmas {
+    background-color: #4a3f6f;
+}
+
+.caso-card h3 {
+    margin: 0 0 15px 0;
+    color: #bff9a4;
+    font-size: 1.3rem;
+}
+
+.caso-card p {
+    margin: 10px 0;
+    line-height: 1.6;
+    color: white;
+}
+
+.caso-card .fecha,
+.caso-card .ubicacion {
+    font-size: 0.95rem;
+    color: #bbb;
+}
+
+.caso-card .descripcion {
+    margin-top: 15px;
+    color: #ddd;
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -56,4 +190,198 @@ nav ul li a:hover {
     nav ul li a {
         font-size: 18px;
     }
+
+    .filtros-container {
+        padding: 20px 15px;
+    }
+
+    .search-box input {
+        max-width: 100%;
+    }
+
+    .filter-buttons {
+        flex-direction: column;
+    }
+
+    .filter-btn {
+        width: 100%;
+    }
+
+    .casos-list {
+        grid-template-columns: 1fr;
+    }
 }
+
+/* Grid para casos */
+.casos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.caso-grid-item {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #3c8b17;
+}
+
+.caso-grid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(60, 139, 23, 0.5);
+}
+
+.caso-grid-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.caso-grid-item h4 {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0));
+    color: #bff9a4;
+    margin: 0;
+    padding: 15px 10px 10px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.caso-grid-item .tipo-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Modal Caso */
+dialog#modal-caso {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+dialog#modal-caso::backdrop {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.modal-caso-content {
+    background-color: #1a1a1a;
+    border: 2px solid #3c8b17;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 900px;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #bff9a4;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    z-index: 10;
+}
+
+.modal-close:hover {
+    color: white;
+}
+
+.modal-caso-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 30px;
+    min-height: 500px;
+}
+
+.modal-caso-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-caso-left img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border: 2px solid #3c8b17;
+    border-radius: 8px;
+}
+
+.modal-caso-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
+}
+
+.modal-caso-right h2 {
+    color: #bff9a4;
+    margin: 0 0 15px 0;
+    font-size: 1.8rem;
+}
+
+.modal-caso-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.modal-caso-meta p {
+    margin: 0;
+    color: #bbb;
+    font-size: 0.95rem;
+}
+
+.modal-caso-meta .tipo-badge {
+    position: relative !important;
+    top: 0 !important;
+    right: 0 !important;
+}
+
+.modal-caso-descripcion {
+    color: #ddd;
+    line-height: 1.8;
+    flex-grow: 1;
+    padding-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .modal-caso-body {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 20px;
+        min-height: auto;
+    }
+
+    .modal-caso-content {
+        width: 95%;
+    }
+
+    .casos-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }

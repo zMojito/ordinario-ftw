@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fantasmas>
+    <fantasma id="1">
+        <titulo>Gonzalo</titulo>
+        <descripcion>No esta muerto ni nada pero nunca esta en clases, a veces se aparece en el puesto de carnitas cuando hay 3x2</descripcion>
+        <imagen>../recursos/gonzalo.png</imagen>
+    </fantasma>
+    <fantasma id="2">
+        <titulo>Carrera de Estadistica</titulo>
+        <descripcion>Una antigua carrera que ha dejado un legado de espíritus en la facultad, se cuenta que aun hay gente que no la termino.</descripcion>
+        <imagen>../recursos/economia.jpg</imagen>
+    </fantasma>
+    <fantasma id="3">
+        <titulo>Chabelo</titulo>
+        <descripcion>Era el ser mas antiguo de la humanidad, se dice que se canso de la vida y el solito se fue a buscar a la huesuda para ofrecerle un mueble troncoso.</descripcion>
+        <imagen>../recursos/chabelo.jpg</imagen>
+    </fantasma>
+    <fantasma id="4">
+        <titulo>Emilio</titulo>
+        <descripcion>Aun no esta muerto tampoco pero pronto cuando repruebe procesos de desarrollo de software lo estara, vuela alto.</descripcion>
+        <imagen>../recursos/emilio.png</imagen>
+    </fantasma>
+    <fantasma id="5">
+        <titulo>El grillo de la torta</titulo>
+        <descripcion>Un grillo que se me aparecio en una torta del puesto junto a la facultad, no se como se llama, no se como llego ahi, ni siquiera se si era realmente un grillo, pero me dio mucho asco</descripcion>
+        <imagen>../recursos/torta.jpg</imagen>
+    </fantasma>
+    <fantasma id="6">
+        <titulo>Pizzerolas</titulo>
+        <descripcion>Descontinuadas hace siglos, la mejor botana que ha dado luz la humanidad, como las extraño.</descripcion>
+        <imagen>../recursos/pizzerolas.jpeg</imagen>
+    </fantasma>
+</fantasmas>

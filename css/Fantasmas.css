@@ -41,6 +41,110 @@ nav ul li a:hover {
     color: #bff9a4;
 }
 
+#lista-fantasmas {
+    padding: 40px 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+.grid-item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 2px solid #3c8b17;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.grid-title {
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0;
+    color: #bff9a4;
+    font-weight: bold;
+}
+
+dialog {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #1a1a1a;
+    border: 2px solid #3c8b17;
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 600px;
+    position: relative;
+    text-align: center;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #bff9a4;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.modal-close:hover {
+    color: white;
+}
+
+#modal-fantasma-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border: 2px solid #3c8b17;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+#modal-fantasma-titulo {
+    font-size: 1.5rem;
+    margin: 15px 0 10px;
+    color: #bff9a4;
+}
+
+#modal-fantasma-desc {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: white;
+    margin: 0;
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -55,5 +159,28 @@ nav ul li a:hover {
 
     nav ul li a {
         font-size: 18px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 0;
+    }
+
+    .grid-item img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    .modal-content {
+        width: 90%;
+        max-width: none;
+        padding: 20px;
+    }
+
+    #modal-fantasma-img {
+        max-width: 100%;
     }
 }

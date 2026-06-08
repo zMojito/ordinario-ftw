@@ -15,7 +15,7 @@ function cargar() {
 }
 
 function mifuncion(aliens) {
-    let table = "<table>";
+    let grid = "<div class='grid-container'>";
     
     for (let i = 0; i < aliens.length; i++) {
         const tituloNode = aliens[i].getElementsByTagName("titulo")[0];
@@ -25,14 +25,25 @@ function mifuncion(aliens) {
         const desc = descNode ? descNode.textContent : "";
         const imgPath = imgNode ? imgNode.textContent : "";
 
-        table += "<tr>" +
-        "<td><img src='" + imgPath + "' alt='" + titulo + "'></td>" +
-        "<td><strong>" + titulo + "</strong></td>" +
-        "<td>" + desc + "</td>" +
-        "</tr>";
+        grid += "<div class='grid-item'>" +
+        "<img src='" + imgPath + "' alt='" + titulo + "' onclick='openModal(\"" + titulo + "\", \"" + desc + "\", \"" + imgPath + "\")'>" +
+        "<p class='grid-title'>" + titulo + "</p>" +
+        "</div>";
     }
-    table += "</table>";
-    document.getElementById("lista-aliens").innerHTML = table;
+    grid += "</div>";
+    document.getElementById("lista-aliens").innerHTML = grid;
+}
+
+function openModal(titulo, desc, img) {
+    const modal = document.getElementById("modal-alien");
+    document.getElementById("modal-titulo").textContent = titulo;
+    document.getElementById("modal-desc").textContent = desc;
+    document.getElementById("modal-img").src = img;
+    modal.showModal();
+}
+
+function closeModal() {
+    document.getElementById("modal-alien").close();
 }
 
 cargar();

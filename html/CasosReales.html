@@ -20,5 +20,36 @@
                 </ul> 
             </nav> 
         </header> 
+    <section class="filtros-container">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Buscar por título..." onkeyup="buscar(this.value)">
+        </div>
+        <div class="filter-buttons">
+            <button class="filter-btn active" id="btn-todos" onclick="filtrarPorTipo('Todos')">Todos</button>
+            <button class="filter-btn" id="btn-aliens" onclick="filtrarPorTipo('Aliens')">Aliens</button>
+            <button class="filter-btn" id="btn-cryptidos" onclick="filtrarPorTipo('Cryptidos')">Cryptidos</button>
+            <button class="filter-btn" id="btn-fantasmas" onclick="filtrarPorTipo('Fantasmas')">Fantasmas</button>
+        </div>
+    </section>
+    <script src="../js/casosreales.js"></script>
+    <article id="lista-casos"></article>
+    <dialog id="modal-caso">
+        <div class="modal-caso-content">
+            <button class="modal-close" onclick="closeModalCaso()">✕</button>
+            <div class="modal-caso-body">
+                <div class="modal-caso-left">
+                    <img id="modal-caso-img" alt="">
+                </div>
+                <div class="modal-caso-right">
+                    <h2 id="modal-caso-titulo"></h2>
+                    <div class="modal-caso-meta">
+                        <p><strong>Fecha:</strong> <span id="modal-caso-fecha"></span></p>
+                        <span id="modal-caso-tipo" class="tipo-badge"></span>
+                    </div>
+                    <p id="modal-caso-desc" class="modal-caso-descripcion"></p>
+                </div>
+            </div>
+        </div>
+    </dialog>
     </body> 
 </html>
